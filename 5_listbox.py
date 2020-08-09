@@ -12,7 +12,7 @@ listbox.insert(0,"사과") #리스트 첫번째에 삽입
 listbox.insert(1,"딸기") 
 listbox.insert(2,"바나나")
 listbox.insert(END,"수박") #리스트 마지막순서에 추가.
-listbox.insert(END<"포도")
+listbox.insert(END,"포도")
 listbox.pack()
 
 def btncmd():
