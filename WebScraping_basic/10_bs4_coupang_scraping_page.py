@@ -1,5 +1,7 @@
 # 예제) '쿠팡' 웹에서 노트북 구매하려는데, 내가 원하는 필터값에 해당하는 노트북만 찾기 프로그램
 
+# ★★ 추가로 여러 페이지에 걸쳐서 스크래핑을 하는 방법 !★★
+
 import requests
 import re           # 정규식 사용을 위한 임포트
 from bs4 import BeautifulSoup
