@@ -7,7 +7,7 @@ res.raise_for_status()
 
 soup = BeautifulSoup(res.text,"lxml")
 
-예제1) 특정 만화의 제목 및 링크정보 리턴받기.
+#예제1) 특정 만화의 제목 및 링크정보 리턴받기.
 cartoons = soup.find_all("td", attrs = {"class":"title"})
 '''
     # 제목 정보.

@@ -15,11 +15,11 @@ res.raise_for_status()          # requests.get() 다음에는 항상 넣어서 �
 soup = BeautifulSoup(res.text, "lxml")  
 
 # # (3) BeautifulSoup 객체로 만들었기에 파이썬코드로 HTML이 작동이 가능함!
-# print(soup.title)             # HTML파일에서 title 스팬을 갖는 값을 리턴.
-# print(soup.title.get_text())  # .get_text() 로 해당 span의 내용만 리턴가능.  
-# print(soup.a)                 # 단, 이 방식은 soup객체에서 처음 발견되는 a 객체 리턴
-# print(soup.a.attrs)           # attrs : attributes (a element의 "속성값"  리턴)
-# print(soup.a["href"])         # a element의 href 속성값 리턴  (이건 잘 안쓰는 방식.)
+print(soup.title)             # HTML파일에서 title 스팬을 갖는 값을 리턴.
+print(soup.title.get_text())  # .get_text() 로 해당 span의 내용만 리턴가능.  
+print(soup.a)                 # 단, 이 방식은 soup객체에서 처음 발견되는 a 객체 리턴
+print(soup.a.attrs)           # attrs : attributes (a element의 "속성값"  리턴)
+print(soup.a["href"])         # a element의 href 속성값 리턴  (이건 잘 안쓰는 방식.)
 
 # (3-1) 일반적으로 HTML구조를 잘 모를때 쓰는 방식   .find() 
 print(soup.find("a"))       # soup객체에서 첫 a element를 찾는다. 뒤에 추가 속성조건 추가가능.
