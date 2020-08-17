@@ -32,7 +32,7 @@ Ex.   data = column.get_text().strip()
 Ex. 
 title = "N	종목명	현재가	전일비	등락률	액면가	시가총액	상장주식수	외국인비율	거래량	PER	ROE	토론실"
 title_list = title.split("\t")
-print(title_list)
+print(title_list
 
 
 
@@ -48,4 +48,7 @@ f = open(filename,"w",encoding="utf8",newline="")
 writer = csv.writer(f)
 ~~처리 코드~~
 writer.writerow(리스트 이름)
+
+(11) find_all에서 속성값 class가 여러개일 경우 list로 만들어준다.
+Ex. movies = soup.find_all("div", attrs = {"class":["ImZGtf mpg5gc","Vpfmgd"]})
 '''
